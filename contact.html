@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+  <title>Contact Form Example</title>
+</head>
+
+<body>
+  <h2 class="content-head is-center">CONTACTE AMB NOSALTRES
+  <aside>
+       <p>
+           Ens <em>encantara</em> escoltarte! </p>
+           <p>Siusplau omple totes les caixetes i envians un missatge.
+       </p>
+   </aside>
+
+<!-- START HERE -->
+   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="css/style.css">
+
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbynu3JkgrAzkaRpiFf0WjKYk6WFh0XVOqbvffZEA8FtqFkSq_am/exec">
+    <!-- change the form action to your script url -->
+
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name">Nom: </label>
+        <input id="name" name="name" placeholder="Escriu el teu nom o el de l'empresa..." />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message">Missatge: </label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="Que ens vols dir?..."></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email"><em>El teu</em> Correu Electronic:</label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="el.nom@exemple.com"/>
+        <span class="email-invalid" style="display:none">
+          Introduiu una adreça electrònica valida</span>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="color">Color preferit: </label>
+        <input id="color" name="color" placeholder="pink" />
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2>Missatge enviat! Moltes gràcies.</h2>
+    </div>
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+<!-- END -->
+</body>
+</html>
+
+
