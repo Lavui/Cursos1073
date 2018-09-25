@@ -46,7 +46,13 @@
               <h1 class="display-4">Mini cursos de tecnologia</h1>
 			  <h3>Que?Qui?Com?</h3><br>
 			  <h5 class="text-uppercase">Que fem:</h5>
-              <p>Realitzem cursos <u><a class="" href="#contact">a mida</a></u> per a nens, joves i adults basats en les noves tecnologies que darrerament estan canviant el nostre entorn. Ensenyem a partir de la pràctica i el nostre objectiu és que en acabar els cursos que realitzem, l'usuari s'emporti una bona experiencia i els conneixaments transmesos en el curs.<br><hr></p>
+              <p>Realitzem cursos <u><a class="" href="#contact">a mida</a></u> per a nens,
+
+<u><a data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</a></u>
+
+ joves i adults basats en les noves tecnologies que darrerament estan canviant el nostre entorn. Ensenyem a partir de la pràctica i el nostre objectiu és que en acabar els cursos que realitzem, l'usuari s'emporti una bona experiencia i els conneixaments transmesos en el curs.<br><hr></p>
 
           <h5 class="text-uppercase">Qui som:</h5>
           <p>Som un grup d'estudiants que ens apasiona el tema de la tecnologia. Tenim experiència en altres cursos semblants i ens encantaria que contactessis amb nosaltres ni que fos nomes per preguntar. Atentament, nosaltres.<br><hr></p>
@@ -303,12 +309,12 @@ De moment cap pero mels inventare:<br>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <!-- SCROOLL REVEAL SCRIPT -->
     <script>
-      window.sr = ScrollReveal();
+    window.sr = ScrollReveal();
 
    /* sr.reveal('.navbar', {
       duration: 2000,
       origin: 'bottom'
-    });*/
+    });
 
     sr.reveal('.header-content-left', {
       duration: 2000,
@@ -326,7 +332,7 @@ De moment cap pero mels inventare:<br>
       duration: 2000,
       delay: 1000, 
       origin: 'bottom'
-    });
+    });*/
 
     sr.reveal('#testimonial div', {
       duration: 2000,
@@ -345,5 +351,20 @@ De moment cap pero mels inventare:<br>
       });
     });
     </script>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cursos a mida:</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Adaptem el temps del curs a les necessitats temporals de l'empresa/escola per tal de facilitar la realització del mateix (sempre i quan dins d'uns certs limits).
+      </div>
+    </div>
+  </div>
+</div>
   </body>
 </html>
