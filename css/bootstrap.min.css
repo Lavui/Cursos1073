@@ -4896,7 +4896,7 @@ a.bg-success:focus,a.bg-success:hover,button.bg-success:focus,button.bg-success:
  background-color:#17a2b8!important
 }
 a.bg-info:focus,a.bg-info:hover,button.bg-info:focus,button.bg-info:hover {
- background-color:#117a8b!important
+ background-color:#117a8b!important#
 }
 .bg-warning {
  background-color:#ffc107!important
@@ -4911,7 +4911,7 @@ a.bg-danger:focus,a.bg-danger:hover,button.bg-danger:focus,button.bg-danger:hove
  background-color:#bd2130!important
 }
 .bg-light {
- background-color:#ffffff!important /*b7f7ea
+ background-color:#b7f7ea!important
 }
 a.bg-light:focus,a.bg-light:hover,button.bg-light:focus,button.bg-light:hover {
  background-color:#dae0e5!important
